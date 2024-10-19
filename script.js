@@ -22,7 +22,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
 
-    // Event Table data can be fetched dynamically via an API or predefined array
+    // Event Table data fetched dynamically via predefined array
     const eventData = [
         { name: 'Cloud Innovation Summit', date: '2024-10-15', speaker: 'John Doe', status: 'Completed' },
         { name: 'Blockchain Revolution', date: '2024-11-05', speaker: 'Dr. Peter Smith', status: 'In Progress' },
