@@ -18,6 +18,7 @@
 </head>
 
 <body>
+    
     <div class="container">
         <header class="header">
             <h1>Welcome! Here's your summary</h1>
@@ -117,10 +118,12 @@
             </div>
             <div class="filter-bar">
                 <div class="input-group">
-                    <span class="input-group-text border-right-0 bg-white">
+                    <span>
                         <i class="bi bi-search"></i>
                     </span>
+                    <span>
                     <input type="text" id="search" class="input-search" placeholder=" Search...">
+                    </span>
                 </div>
                 <select id="filter-date">
                     <option value="all">Date</option>
@@ -139,8 +142,14 @@
                         <option value="">Most Recent</option>
                     </select>
                 </span>
+                   
+                <span class="vertical-ellipsis">&#8942;</span>
 
-                <button>Export</button>
+
+                <button class="exportBtn">
+                    <i class="bi bi-box-arrow-in-down"></i> 
+                    Export
+                </button>
             </div>
 
             <table>

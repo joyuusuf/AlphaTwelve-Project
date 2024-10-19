@@ -1,10 +1,10 @@
-/* General Styles */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: Arial, sans-serif;
 }
+
 
 .container {
     padding: 20px;
@@ -15,7 +15,7 @@
     margin-bottom: 20px;
 }
 
-/* Stats Section */
+
 .stats {
     display: flex;
     gap: 20px;
@@ -32,15 +32,15 @@
 
 .stat-card h3 {
     font-size: 18px;
-   font-weight: bold;
-   color: rgba(60, 61, 61, 0.699); 
+    font-weight: bold;
+    color: rgba(60, 61, 61, 0.699);
 
 
 }
 
 .stat-card p {
     font-size: 24px;
-   font-weight: bold;
+    font-weight: bold;
 }
 
 /* Main Content */
@@ -70,7 +70,8 @@
     text-align: left;
 }
 
-.carousel-caption h5, p{
+.carousel-caption h5,
+p {
     text-align: left;
     padding: 10px;
 
@@ -87,6 +88,7 @@
     height: auto;
     margin: 0 auto;
 }
+
 .news-carousel {
     flex: 1;
     position: relative;
@@ -150,12 +152,21 @@
     margin-top: 20px;
 }
 
+.input-group {
+    display: flex;
+    justify-content: space-between;
+    border: 0.5px solid aqua;
+    padding: 10px 20px;
+
+
+}
+
 .filter-bar {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
     margin-bottom: 20px;
-    gap: 40px;
+    gap: 30px;
 }
 
 .filter-bar select {
@@ -164,29 +175,44 @@
     border-radius: 4px;
 }
 
-.input-search{
+.input-search {
     outline: none;
-    border: 0.5px solid aqua;
-    border-left: 0px;
+    border: none;
 }
 
 ::placeholder {
-    color: rgba(131, 134, 134, 0.5); 
+    color: rgba(131, 134, 134, 0.5);
 }
 
-.recent-span{
+.recent-span {
     display: flex;
     align-items: center;
 }
 
-.recent-select{
+.recent-select {
     width: 9rem;
 }
+
+.vertical-ellipsis {
+    display: flex;
+    justify-content: center;
+    font-size: 24px;
+    width: 10rem;
+    border: 0.5px solid aqua;
+    cursor: pointer;
+
+}
+
+.exportBtn {
+    gap: 10px;
+}
+
 .filter-bar button {
     padding: 8px 16px;
-    background-color: #4CAF50;
-    color: white;
-    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 0.5px solid aqua;
     border-radius: 4px;
     cursor: pointer;
 }
@@ -197,16 +223,18 @@ table {
     margin-bottom: 20px;
 }
 
-table th, table td {
+table th,
+table td {
     border: none;
     padding: 10px;
     text-align: left;
 }
 
-.pagination-section{
+.pagination-section {
     display: flex;
     justify-content: space-between;
 }
+
 .pagination {
     display: flex;
     justify-content: center;
@@ -220,24 +248,26 @@ table th, table td {
     cursor: pointer;
 }
 
-.right-pagination{
+.right-pagination {
     display: flex;
     /* align-items: center; */
 }
 
-select{
+select {
     width: 7rem;
     height: 2.5rem;
 }
 
 /* Responsiveness */
 @media (max-width: 768px) {
-    .stats, .main-content {
+
+    .stats,
+    .main-content {
         flex-direction: column;
     }
 
 
-    .carousel-caption{
+    .carousel-caption {
         position: absolute;
         bottom: 0;
         left: 0;
@@ -246,22 +276,41 @@ select{
         padding: 10px;
         text-align: left;
     }
-    .carousel-caption h5{
+
+    .carousel-caption h5 {
         font-size: 0.9rem;
         text-align: left;
     }
 
-    .carousel-caption p{
+    .carousel-caption p {
         font-size: 0.6rem;
         text-align: left;
+
+    }
+
+
+
+
+
+
+
+    .vertical-ellipsis {
+        display: flex;
+        justify-content: center;
+        font-size: 24px;
+        width: 10rem;
+        border: 0.5px solid aqua;
+        cursor: pointer;
 
     }
 }
 
 
 @media (min-width: 992px) {
+
     /* Large screens (desktops) */
     .custom-img {
-        width: 40%; /* Make the images smaller on large screens */
+        width: 40%;
+        /* Make the images smaller on large screens */
     }
 }

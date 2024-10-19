@@ -1,5 +1,9 @@
+
+
+
+// Chart
+
 document.addEventListener("DOMContentLoaded", function () {
-    // Chart.js for the Event Registration chart
     const ctx = document.getElementById('eventChart').getContext('2d');
     const eventChart = new Chart(ctx, {
         type: 'bar',
