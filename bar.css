@@ -258,6 +258,11 @@ select {
     height: 2.5rem;
 }
 
+
+
+
+
+
 /* Responsiveness */
 @media (max-width: 768px) {
 
@@ -303,6 +308,11 @@ select {
         cursor: pointer;
 
     }
+
+
+
+
+    
 }
 
 
