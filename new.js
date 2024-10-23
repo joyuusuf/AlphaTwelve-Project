@@ -1,4 +1,4 @@
-// SideBar Button Easeout and In
+// SideBar Button Easeout and In on Large Screen
 let btn = document.querySelector("#btn")
 let sideBar = document.querySelector(".sidebar")
 
@@ -6,6 +6,8 @@ btn.onclick = function () {
     sideBar.classList.toggle("active")
 };
 
+
+// Sidebar Button Show and Hide on Small Screens
 
 document.getElementById('menuIcon').addEventListener('click', function() {
     let sidebar = document.getElementById('sidebar');
@@ -34,16 +36,14 @@ document.getElementById("toggle-icon").addEventListener("click", function() {
         body.style.backgroundColor = "rgb(57, 54, 69)";
         sidebar.style.backgroundColor = "rgb(72, 69, 84)";
         mainContent.style.backgroundColor = "rgb(72, 69, 84)";
-
-        // Save dark mode preference in localStorage
         localStorage.setItem("darkMode", "enabled");
     } else {
         // Revert to light mode background colors
-        body.style.backgroundColor = "";  // Or set your light mode color
-        sidebar.style.backgroundColor = "";  // Or set your light mode color
-        mainContent.style.backgroundColor = "";  // Or set your light mode color
+        body.style.backgroundColor = ""; 
+        sidebar.style.backgroundColor = ""; 
+        mainContent.style.backgroundColor = ""; 
 
-        // Remove dark mode preference from localStorage
+       
         localStorage.setItem("darkMode", "disabled");
     }
 });
