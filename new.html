@@ -18,16 +18,32 @@
 </head>
 
 <body>
-    <div class="sidebar">
+
+
+    <nav class="navbar">
+        <div class="navbar-logo">
+            <h1 class="logo-text">Full Logo</h1>
+        </div>
+
+        <div class="menu-icon" id="menuIcon">
+            <button type="button" class="navbar-toggler">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+        </div>
+    </nav>
+
+    <div class="sidebar" id="sidebar">
         <div class="top">
             <div class="logo">
-               
+
                 <span class="nav-item">Full Logo</span>
             </div>
             <i class="fa-solid fa-bars" id="btn"></i>
 
+            <i class="fa-solid fa-times close-btn" id="close-btn"></i>
+
             <!-- <i class="fa-solid fa-bars" id="open-btn"></i> -->
-            <i class="fa-solid fa-times" id="close-btn"></i>
+            <!-- <i class="fa-solid fa-times" id="close-btn"></i> -->
         </div>
 
         <ul>
@@ -143,7 +159,7 @@
         <div class="container">
             <header class="header">
                 <h1>Welcome! Here's your summary</h1>
-                
+
             </header>
 
             <!-- Stats Section -->
@@ -305,7 +321,7 @@
                         </button>
                     </span>
 
-                   
+
                 </div>
 
                 <table>
@@ -318,7 +334,7 @@
                         </tr>
                     </thead>
                     <tbody id="eventTableBody">
-                       
+
                     </tbody>
                 </table>
                 <div class="pagination-section">
@@ -347,7 +363,7 @@
             <ul>
                 <li>
                     <a href="#">
-                       
+
                         <i class="fa-solid fa-calendar"></i>
                         <span class="footer-nav-item">Events </span>
                     </a>
@@ -356,7 +372,7 @@
 
                 <li>
                     <a href="#">
-                       
+
                         <i class="fa-solid fa-house"></i>
                         <span class="footer-nav-item">Speakers</span>
                     </a>
@@ -367,7 +383,7 @@
 
                 <li>
                     <a href="#">
-                       
+
                         <i class="fa-solid fa-calendar"></i>
                         <span class="footer-nav-item">Reports</span>
                     </a>
@@ -376,7 +392,7 @@
 
                 <li>
                     <a href="#">
-                       
+
                         <i class="fa-solid fa-user"></i>
                         <span class="footer-nav-item">Profile</span>
                     </a>

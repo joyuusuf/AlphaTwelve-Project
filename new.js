@@ -7,59 +7,15 @@ btn.onclick = function () {
 };
 
 
+document.getElementById('menuIcon').addEventListener('click', function() {
+    let sidebar = document.getElementById('sidebar');
+    sidebar.classList.toggle('active');
+});
 
-//let toggleIcon = document.getElementById('toggle-icon');
-// let body = document.body;
-// let sidebar = document.querySelector('.sidebar');
-// let mainContent = document.querySelector('.main-content');
-
-// Check and apply the saved theme mode from localStorage
-// if (localStorage.getItem('theme') === 'dark') {
-
-
-//     body.classList.add('dark-mode');
-//     sidebar.classList.add('dark-mode');
-//     mainContent.classList.add('dark-mode');
-//     toggleIcon.classList.remove('fa-toggle-off');
-//     toggleIcon.classList.add('fa-toggle-on');
-// } else {
-//     body.classList.add('light-mode');
-//     sidebar.classList.add('light-mode');
-//     mainContent.classList.add('light-mode');
-// }
-
-// // Function to toggle dark/light mode
-// toggleIcon.addEventListener('click', () => {
-
-
-//     if (body.classList.contains('dark-mode')) {
-//         // Switch to light mode
-//         body.classList.remove('dark-mode');
-//         sidebar.classList.remove('dark-mode');
-//         mainContent.classList.remove('dark-mode');
-
-//         body.classList.add('light-mode');
-//         sidebar.classList.add('light-mode');
-//         mainContent.classList.add('light-mode');
-
-//         toggleIcon.classList.remove('fa-toggle-on');
-//         toggleIcon.classList.add('fa-toggle-off');
-//         localStorage.setItem('theme', 'light'); // Save light mode in localStorage
-//     } else {
-//         // Switch to dark mode
-//         body.classList.remove('light-mode');
-//         sidebar.classList.remove('light-mode');
-//         mainContent.classList.remove('light-mode');
-
-//         body.classList.add('dark-mode');
-//         sidebar.classList.add('dark-mode');
-//         mainContent.classList.add('dark-mode');
-
-//         toggleIcon.classList.remove('fa-toggle-off');
-//         toggleIcon.classList.add('fa-toggle-on');
-//         localStorage.setItem('theme', 'dark'); // Save dark mode in localStorage
-//     }
-// });
+document.getElementById('close-btn').addEventListener('click', function() {
+    let sidebar = document.getElementById('sidebar');
+    sidebar.classList.remove('active');
+});
 
 // JavaScript to handle dark mode toggle and store preference in localStorage
 document.getElementById("toggle-icon").addEventListener("click", function() {
