@@ -6,8 +6,15 @@
 }
 
 
-.container {
+.all-container {
     padding: 20px;
+    position: relative;
+    min-height: 100vh;
+    top: 0;
+    left: 80px;
+    transition: all 0.5 ease;
+    width: calc(100% - 80px);
+    /* padding: 1rem; */
 }
 
 .header h1 {
@@ -244,7 +251,7 @@ table td {
 .pagination button {
     padding: 8px 18px;
     border: none;
-    border-radius: 4px;
+    border-radius: 50%;
     cursor: pointer;
 }
 
@@ -293,6 +300,25 @@ select {
 
     }
 
+    .filter-bar {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        /* padding: 0px;
+        gap: 16px;
+        height: 902px; */
+    
+        width: fit-content;
+      }
+    
+      span .input-search{
+        width: fit-content;
+      }
+    
+      .filter-date{
+        width: fit-content;
+        text-align: center;
+      }
 
 
 
@@ -312,7 +338,7 @@ select {
 
 
 
-    
+
 }
 
 

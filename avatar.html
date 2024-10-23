@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Modal</title>
+    <style>
+      
+        .modal {
+            background-color: #393142;
+            border-radius: 10px;
+            padding: 20px;
+            width: 400px;
+            max-width: 100%;
+            color: white;
+            position: relative;
+            font-family: Arial, sans-serif;
+            display: none;
+        }
+
+        .modal .close-btn {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            background: none;
+            border: none;
+            color: white;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        .modal h2,
+        .modal p {
+            margin: 0 0 10px;
+        }
+
+        .modal .avatars {
+            display: flex;
+            gap: 5px;
+            margin: 15px 0;
+        }
+
+        .modal .avatar {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            background-color: lightgray;
+        }
+
+        .modal .buttons {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 20px;
+        }
+
+        .modal .btn {
+            border: none;
+            padding: 10px 15px;
+            cursor: pointer;
+            border-radius: 5px;
+            font-size: 14px;
+        }
+
+        .modal .btn-edit {
+            background-color: white;
+            color: black;
+        }
+
+        .modal .btn-delete {
+            background-color: #f55757;
+            color: white;
+        }
+
+        .modal .btn-complete {
+            background-color: #8369d4;
+            color: white;
+        }
+
+        /* Styles for Large Screens */
+        @media (min-width: 768px) {
+            .modal {
+                width: 400px;
+            }
+
+            .modal .buttons .btn {
+                flex: 1;
+                margin: 0 5px;
+                text-align: center;
+            }
+        }
+
+        /* Styles for Small Screens */
+        @media (max-width: 767px) {
+            .modal {
+                width: 300px;
+            }
+
+            .modal .buttons {
+                flex-direction: column;
+            }
+
+            .modal .btn {
+                width: 100%;
+                margin: 5px 0;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Modal -->
+    <span id="openModalBtn" onclick="openModalBtn()">Events</span>
+
+    <div id="modal" class="modal">
+        <button id="close-btn" onclick="closeBtn()" class="close-btn">&times;</button>
+        <h2>Event Name</h2>
+        <p>Event Date</p>
+        <p>Event Description</p>
+
+        <!-- Avatars Section -->
+        <div class="avatars">
+            <div class="avatar"></div>
+            <div class="avatar"></div>
+            <div class="avatar"></div>
+        </div>
+
+        <p>3 Guest Speakers: Speaker name A, Speaker name B, Speaker name C.<br>300 Attendees</p>
+
+        <!-- Buttons Section -->
+        <div class="buttons">
+            <button class="btn btn-edit">Edit</button>
+            <button class="btn btn-delete">Delete</button>
+            <button class="btn btn-complete">Mark as completed</button>
+        </div>
+    </div>
+
+
+
+
+
+    <script>
+        // Modal Functionality
+
+        let modal = document.getElementById("modal");
+
+        // Open modal when button is clicked
+
+        function openModalBtn() {
+            let openModalBtn = document.getElementById("openModalBtn");
+            modal.style.display = "block";
+        };
+
+        // Close the modal when the close icon is clicked
+
+        function closeBtn() {
+            let closeBtn = document.getElementById("close-btn");
+            modal.style.display = "none";
+        }
+
+        // Close Modal if the user clicks outside the modal content
+
+        window.onclick = function (event) {
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
+        };
+
+        // Handle Edit, Delete and Update buttons
+
+        let editBtn = document.querySelector(".edit-btn");
+        let updateBtn = document.querySelector(".update-btn");
+        let deleteBtn = document.querySelector(".delete-btn");
+
+        editBtn.addEventListener("click", function () {
+            alert("edit button clicked!")
+        })
+
+
+        updateBtn.addEventListener("click", function () {
+            alert("update button clicked!")
+        })
+
+
+        deleteBtn.addEventListener("click", function () {
+            alert("delete button clicked!")
+        })
+
+    </script>
+
+
+</body>
+
+</html>

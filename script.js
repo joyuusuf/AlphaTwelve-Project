@@ -1,4 +1,24 @@
 
+// sidebar
+//  
+
+
+
+  document.addEventListener('DOMContentLoaded', function () {
+    const modalImage = document.getElementById('modalImage');
+    const container = document.querySelector('.container');
+    let isContainerMoved = false;
+  
+    modalImage.addEventListener('click', function () {
+      if (!isContainerMoved) {
+        container.classList.add('container-right');
+        isContainerMoved = true;
+      } else {
+        container.classList.remove('container-right');
+        isContainerMoved = false;
+      }
+    });
+  });
 
 
 // Chart
